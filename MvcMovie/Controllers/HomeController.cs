@@ -6,10 +6,10 @@ namespace MvcMovie.Controllers;
 
 public class HomeController : Controller
 {
-   public string Index()
-    {
-        return "This is my defaut action...";
-    }
+   public IActionResult Index()
+{
+    return View();
+}
     
     public string Welcome(string name, int numTimes = 1)
     {
